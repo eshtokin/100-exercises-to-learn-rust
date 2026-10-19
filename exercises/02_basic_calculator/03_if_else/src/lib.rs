@@ -2,8 +2,19 @@
 /// `13` if `n` is divisible by `3`,
 /// `17` otherwise.
 fn magic_number(n: u32) -> u32 {
-    todo!()
+    let last_even: u32 = n % 2;
+    let last_third: u32 = n % 3;
+
+    if (last_even == 0) {
+        return 12
+    } else if (last_third == 0) {
+        return 13
+    }
+
+    return 17
+        
 }
+
 
 #[cfg(test)]
 mod tests {
